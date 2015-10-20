@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.markupartist.android.widget.ActionBar
+            android:id="@+id/actionbar"
+            style="@style/ActionBar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/tv_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center"
+            android:text="Select Date Of Submitted Complain:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#45619D" >
+        </TextView>
+
+        <CalendarView
+            android:id="@+id/calendarView1"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="10dp"
+            android:background="#45619D" />
+
+        <Button
+            android:id="@+id/btn_get_complains"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="25dip"
+            android:background="@drawable/custom_log_button"
+            android:text="Get Complains"
+            
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        
+    </LinearLayout>
+
+</RelativeLayout>

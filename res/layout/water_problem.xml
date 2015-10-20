@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    tools:context=".MainActivity" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.markupartist.android.widget.ActionBar
+                android:id="@+id/actionbar"
+                style="@style/ActionBar"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Select complain:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#45619D" >
+            </TextView>
+
+            <RadioGroup
+                android:id="@+id/RGWaterProblem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp" >
+
+                <RadioButton
+                    android:id="@+id/r0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Water Leakage"
+                    android:textColor="#45619D" />
+
+                <RadioButton
+                    android:id="@+id/r1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contamination"
+                    android:textColor="#45619D" />
+
+                <RadioButton
+                    android:id="@+id/r2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Brusting of pipe"
+                    android:textColor="#45619D" />
+
+                <RadioButton
+                    android:id="@+id/r3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Water Shortage / low pressure"
+                    android:textColor="#45619D" />
+
+                <RadioButton
+                    android:id="@+id/r4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Others"
+                    android:textColor="#45619D" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="0px"
+                android:focusable="true"
+                android:focusableInTouchMode="true" />
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignLeft="@+id/RGPipeProblem"
+                android:layout_below="@+id/RGPipeProblem"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/custon_edittext"
+                android:hint="If others, then fill this"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Enter Dia/material "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#45619D" />
+
+            <EditText
+                android:id="@+id/et_val"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custon_edittext"
+                android:padding="5dp" >
+            </EditText>
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="fill_parent"
+                android:layout_height="250dp"
+                android:layout_alignRight="@+id/textView1"
+                android:layout_gravity="center"
+                android:background="@drawable/pic_border"
+                android:scaleType="fitXY"
+                android:src="@drawable/pipeleakage" />
+
+            <LinearLayout
+                android:id="@+id/LinearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/ibTakePic"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/custom_cam_button" />
+
+                <Button
+                    android:id="@+id/b_update"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/custom_update_button" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

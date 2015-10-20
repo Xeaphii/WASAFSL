@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/imageView1" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <com.markupartist.android.widget.ActionBar
+                android:id="@+id/actionbar"
+                style="@style/ActionBar"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/actionbar"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="14dp"
+                android:text="Click to send email in case of any problem"
+                android:textColor="#6D7B92" />
+
+            <Button
+                android:id="@+id/bEmail"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_below="@+id/textView1"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/custom_emial_button" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView1"
+                android:layout_below="@+id/bEmail"
+                android:layout_marginTop="14dp"
+                android:text="Click to call me in case of any problem"
+                android:textColor="#6D7B92" />
+
+            <Button
+                android:id="@+id/bCall"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignLeft="@+id/bEmail"
+                android:layout_below="@+id/textView2"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/custom_call_button" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_below="@+id/bCall"
+                android:layout_marginTop="14dp"
+                android:text="Click to send sms in case of any problem"
+                android:textColor="#6D7B92" />
+
+            <Button
+                android:id="@+id/bSMS"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignLeft="@+id/bCall"
+                android:layout_below="@+id/textView3"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/custom_sms_button" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView3"
+                android:layout_below="@+id/bSMS"
+                android:layout_marginTop="44dp"
+                android:text="Please rate this app"
+                android:textColor="#6D7B92" />
+
+            <RatingBar
+                android:id="@+id/ratingBar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/bSMS"
+                android:layout_below="@+id/textView4"
+                android:layout_marginTop="15dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

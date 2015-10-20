@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_about"
+        android:icon="@drawable/icon_bookmark"
+        android:title="About us"/>
+
+    <item
+        android:id="@+id/menu_share"
+        android:icon="@drawable/icon_share"
+        android:title="Share this app"/>
+
+    <item
+        android:id="@+id/menu_settings"
+        android:icon="@drawable/icon_preferences"
+        android:title="Settings"/>
+
+</menu>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+     android:background="#fff"
+     >
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <com.markupartist.android.widget.ActionBar
+            android:id="@+id/actionbar"
+            style="@style/ActionBar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/tv_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="left"
+            android:text="Select Complain From List:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#45619D" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/s_complain_ids"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/custom_log_button"
+            android:drawSelectorOnTop="true"
+            android:entries="@array/country_arrays"
+            android:popupBackground="#000000"
+            android:prompt="@string/country_prompt" />
+
+        <TextView
+            android:id="@+id/tv_rectified"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Previously Submitted Image:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#45619D" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/img_rec"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:layout_alignRight="@+id/textView1"
+            android:layout_gravity="center"
+            android:background="@drawable/pic_border"
+            android:scaleType="fitXY"
+            android:src="@drawable/pipeleakage" />
+        
+        <TextView
+            android:id="@+id/tv_rectified"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Rectified Image:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#45619D" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:layout_alignRight="@+id/textView1"
+            android:layout_gravity="center"
+            android:background="@drawable/pic_border"
+            android:scaleType="fitXY"
+            android:src="@drawable/pipeleakage" />
+
+        <TextView
+            android:id="@+id/tv_rectified"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:text="Comments:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#45619D" >
+        </TextView>
+        
+        <EditText
+            android:layout_width="fill_parent"
+            android:id="@+id/ETComment"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:hint="Enter there"
+            >
+            </EditText>
+        
+        <LinearLayout
+            android:id="@+id/LinearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/ibTakePic"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/custom_cam_button" />
+
+            <Button
+                android:id="@+id/b_update"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/custom_update_button" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

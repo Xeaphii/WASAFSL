@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".MainActivity" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/imageView1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.markupartist.android.widget.ActionBar
+                android:id="@+id/actionbar"
+                style="@style/ActionBar"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" />
+
+            <Button
+                android:id="@+id/bDrainage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/custom_drainage_button" />
+
+            <Button
+                android:id="@+id/bRectified"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/custom_rectified_button" />
+
+            <Button
+                android:id="@+id/bOffline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/custom_offline_button" />
+
+            <Button
+                android:id="@+id/bPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/custom_password_button" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

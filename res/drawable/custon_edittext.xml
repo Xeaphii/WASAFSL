@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- pressed -->
+    <item android:drawable="@drawable/back_border_edittext" android:state_focused="true"/>
+    <!-- focused -->
+   <item android:drawable="@drawable/edittext_not_pressed" android:state_focused="false"/>
+
+    <!-- default -->
+
+</selector>
